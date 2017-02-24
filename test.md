@@ -19,7 +19,7 @@ In your data set, all your variables are either Ordinal (Opinion Variables) or N
 
 Second, after you read the data, you will need to clean the data and present the statistic of the most important variables in your data set that you will be analysing one by one. This step in the data analysis is referred to as “univariate data analysis”. Depending on the type of your variable, you will choose your statistic accordingly.
 
-
+```
 | Type of Variable    | What to present             |
 |---------------------|-----------------------------|
 | Nominal and Ordinal | Total Count and Percentages |
