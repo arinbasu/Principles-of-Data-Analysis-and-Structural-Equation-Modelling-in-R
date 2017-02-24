@@ -24,7 +24,7 @@ Second, after you read the data, you will need to clean the data and present the
 |---------------------|-----------------------------|
 | Nominal and Ordinal | Total Count and Percentages |
 | Interval and Ratio  | Total Count and Percentages |
-
+```
 
 For Nominal and Ordinal Variables you should present their total count and the percentage values. This is the code you use in R to generate them:
 
