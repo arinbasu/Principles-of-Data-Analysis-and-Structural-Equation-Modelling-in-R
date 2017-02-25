@@ -35,6 +35,7 @@ n <- table(x)
 pct <- round(prop.table(n) * 100, 2)
 n_and_pct <- c(n, pct)
 ```
+
 Here, x is the variable, pct is percentage, and c() is a function that binds the two objects. You can do by hand for each variable in your data set or you can write a function at one time to accomplish this in R. Below, I have shown you a function that will take a variable x and will output the count and percentage:
 
 # function to do univariate analysis of nominal and ordinal variables
@@ -46,6 +47,7 @@ n_pct <- c(n, pct)
 return(n_pct)
 }
 ```
+
 Note how to write a function in R:
 
 1. Every function is contained in an object. In this example, that object is “unitable”. Then we declare that it is  a function and start with a variable.
