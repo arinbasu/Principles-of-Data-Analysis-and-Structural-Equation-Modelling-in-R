@@ -22,16 +22,19 @@ In your data set, all your variables are either Ordinal (Opinion Variables) or N
 Second, after you read the data, you will need to clean the data and present the statistic of the most important variables in your data set that you will be analysing one by one. This step in the data analysis is referred to as “univariate data analysis”. Depending on the type of your variable, you will choose your statistic accordingly.
 
 
-| Type of Variable    | What willyou present        |
-|:--------------------|:----------------------------|
-| Nominal and Ordinal | Total Count and Percentages |
-| Interval and Ratio  | Total Count and Percentages |
+| Type of Variable    | What will you present        |
+|:--------------------|:-----------------------------|
+| Nominal and Ordinal | Total Count and Percentages  |
+| Interval and Ratio  | Mean and Confidence Interval |
 
 
 
 For Nominal and Ordinal Variables you should present their total count and the percentage values. This is the code you use in R to generate them:
 
 For one variable, this is the code:
+
+*Code Listing 1*
+
 
 ```
 n <- table(x)
@@ -41,7 +44,7 @@ n_and_pct <- c(n, pct)
 
 Here, x is the variable, pct is percentage, and c() is a function that binds the two objects. You can do by hand for each variable in your data set or you can write a function at one time to accomplish this in R. Below, I have shown you a function that will take a variable x and will output the count and percentage:
 
-## *Function to do univariate analysis of nominal and ordinal variables*
+## *Code Listing 2. Function to do univariate analysis of nominal and ordinal variables*
 
 ```
 unitable <- function(x){
@@ -62,12 +65,14 @@ Note how to write a function in R:
 
 You can now apply this function to your variables to produce their count and percentages. To do this, simply type:
 
+*Code Listing 3. *
 
 ```unitable(name of your variable)
 ```
 
 You will see that this will quickly become tedious to type the names of all the different variables one by one to produce a whole list of variables. Particularly, if you have 50 plus variables, you will not want to do that. Therefore, you will use another in-built function called “sapply”. So subset the data elements that are nominal or ordinal, and run the following function on that data frame or the subset:
 
+*Code listing 4. *
 
 ```
 list_of_results <- sapply(data frame, unitable)
