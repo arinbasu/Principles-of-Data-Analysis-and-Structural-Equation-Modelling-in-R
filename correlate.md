@@ -18,13 +18,11 @@ We take out "Don't Know" from the pool and we are left with five categories. Thu
 
 If you choose to treat these variables as binary variables (that is values of 0 and 1 based on certain categories), then you will use the table similar to the one in Figure 2. Your outcome variable will be on the top and categories will in the columns; your explanatory variables will be in the rows, the categories of the explanatory variables will be in the second column, you will report N and %s, and the pvalues based on their chi-square tests in the last column.
 
-```
-# Here are the R codes for writing a bivariate table
-# this is for a table assuming that it has five categories
-# for y variable, you will need to adjust for other
-# number of categories
 
-bivtable <- function(x,y){
+Here are the R codes for writing a bivariate table, this is for a table assuming that it has five categories
+for y variable, you will need to adjust for other numbers.
+
+```bivtable <- function(x,y){
   tab1 <- table(x,y)
   tab2 <- round(prop.table(tab1, 1)* 100, 2)
   pval <- prop.test(tab1)$p.value
@@ -36,21 +34,19 @@ bivtable <- function(x,y){
   tab4 <- cbind(tab3, pval)
   return(tab4)
 }
-
 ```
+
 Then, when you need to put that into the document, you will need to call it with each pair of variables as follows:
 
+```bivtable(var1, var2)
 ```
-bivtable(var1, var2)
 
-```
+
 where var1 is your explanatory variable and var2 is your outcome variable. For example, if you wanted to test Age (categorical variable) with a question, say "Q6", you will do
 
-```
-bivtable(Age, Q6)
-
+```bivtable(Age, Q6)
 ```
 
 If you choose to treat these variables as continuous variables, then you would need to report Analysis of Variance (or ANOVA) in the bivariate set of tables for these variables.
 
-(I will write more about how to do ANOVA and Correlation Matrix in the next post).  
+(I will write more about how to do ANOVA and Correlation Matrix in the next post).
