@@ -3,7 +3,7 @@
 In addition to the bivariate table, you will also have to include a correlation matrix in the bivariate analysis set of tables. This is important as in your research you are using an instrument (the questionnaire) where you have asked your participants questions and they have answered indicating preferences. These preferences ranged from "Totally Agree" to "Totally Disagree", and a "Neutral" in between (See the following table).
 
 | Variable Category | Score Assigned |
-|-------------------|----------------|
+|:-------------------|:----------------:|
 | Totally Agree     | 1              |
 | Agree             | 2              |
 | Neutral           | 3              |
@@ -46,6 +46,7 @@ where var1 is your explanatory variable and var2 is your outcome variable. For e
 
 ```bivtable(Age, Q6)
 ```
+
 
 If you choose to treat these variables as continuous variables, then you would need to report Analysis of Variance (or ANOVA) in the bivariate set of tables for these variables.
 
