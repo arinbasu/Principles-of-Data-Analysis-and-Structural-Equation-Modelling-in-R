@@ -105,11 +105,11 @@ The second thing that you should be careful is that your outcome variable should
 
 
 
-|               | Outcome           |  Variable           |
-|:----------    |:-----------       |:-----------       |
-|Explanatory    | Continuous        | Categorical         |
-| Continuous    | Linear Regression | Logistic Regression |
-| Categorical   | ANOVA             | Cross Tables        |
+| Explanatory   | Outcome Variable  |                     |
+|:--------------|:------------------|:--------------------|
+|               | *Continuous*      | *Categorical*       |
+| *Continuous*  | Linear Regression | Logistic Regression |
+| *Categorical* | ANOVA             | Cross Tables        |
 
 
 In your case, you have four levels in your age variable, two levels in your gender variables, and so on. You can treat these as nominal variables. On the other hand, while it is correct to treat your opinion variables as Ordinal variables and therefore analyse their data accordingly, there are are two possibilities:
