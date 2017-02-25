@@ -1,9 +1,9 @@
 ---
 multicolumn: false
-export-width:
-web-width: 500px
+export-width: 
+web-width: 350px
 align: center
 float: h!
-export-filename:
+export-filename: 
 version: 1
-path: figures/figure2/config.yml
+path: figures/confounding/config.yml
