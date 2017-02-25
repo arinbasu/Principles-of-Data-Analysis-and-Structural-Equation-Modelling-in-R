@@ -19,12 +19,12 @@ In your data set, all your variables are either Ordinal (Opinion Variables) or N
 
 Second, after you read the data, you will need to clean the data and present the statistic of the most important variables in your data set that you will be analysing one by one. This step in the data analysis is referred to as “univariate data analysis”. Depending on the type of your variable, you will choose your statistic accordingly.
 
-
+```
 | Type of Variable    | What to present             |
 |---------------------|-----------------------------|
 | Nominal and Ordinal | Total Count and Percentages |
 | Interval and Ratio  | Total Count and Percentages |
-
+```
 
 For Nominal and Ordinal Variables you should present their total count and the percentage values. This is the code you use in R to generate them:
 
@@ -92,13 +92,13 @@ This is a good time to think about your hypotheses and select your variables. In
 Note that there are different types of variables (Categorical or Continuous Variables), and now we have two different classes of variables.
 
 2. The second thing that you should be careful is that your outcome variable should always be in the column (when it is a categorical variable), or on the top of a table, and your explanatory variables will ALWAYS be in the rows. What kind of analyses to do? Here is a chart that you will need to remember:
-
+```
 |               | Outcome           |  Variable           |
 |----------     |-----------        |-----------          |
 |Explanatory    | Continuous        | Categorical         |
 | Continuous    | Linear Regression | Logistic Regression |
 | Categorical   | ANOVA             | Cross Tables        |
-
+```
 
 In your case, you have four levels in your age variable, two levels in your gender variables, and so on. You can treat these as nominal variables. On the other hand, while it is correct to treat your opinion variables as Ordinal variables and therefore analyse their data accordingly, there are are two possibilities:
 
